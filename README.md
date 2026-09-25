@@ -1,6 +1,6 @@
 # Projektauswahl – welche Filialen lohnen sich? – Streamlit-Demo
 
-*(noch nicht deployed)*
+**[→ Demo live ausprobieren](https://sebastianhanisch-projektauswahl-demo.streamlit.app/)**
 
 Erste Erweiterung (Stück 13) der **Netzwerkfluss-Linie** der "Konzepte"-Reihe für die Website "Sebastian Hanisch – Operations Research und Machine Learning", Kind von [edmonds-karp-demo](https://github.com/sebastian-hanisch/edmonds-karp-demo) und [dinic-demo](https://github.com/sebastian-hanisch/dinic-demo):
 anders als die Fall-Demos im Portfolio (ein Anwendungsfall, mehrere Verfahren im Vergleich) zeigt diese Demo **ein** Verfahren – den **minimalen Schnitt als Entscheidungsmodell** – an einem wachsenden Beispiel.
