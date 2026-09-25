@@ -8,7 +8,7 @@ In der Hauptlinie war der Schnitt nur der *Beweis* des maximalen Flusses (Max-Fl
 Gesucht ist die Auswahl mit dem größten Gewinn (Erlöse minus Kosten) ohne verletzte Voraussetzung – eine **gewichtsmaximale abgeschlossene Menge** (Picard 1976). Ein **Hilfsnetz** macht daraus einen Fluss: Quelle → Filiale mit dem Erlös als Kapazität, Anlage → Senke mit den Kosten, jede Voraussetzung als Kante mit unendlicher Kapazität; ein minimaler Schnitt trennt die gewählte von der nicht gewählten Menge, und der Gewinn ist *Summe aller Erlöse minus Schnittkapazität*.
 Vehikel: das Distributionsnetz der Linie (Werke, Verteilzentren, Filialen) mit Voraussetzungen, dazu fünf feste Lehrbeispiele (gemeinsames DC, Kette, nichts lohnt, Greedy-Falle, „eine Anlage genügt“).
 
-**Einordnung in die Reihe (die Kanten des Graphen):** Der Schnitt ist der Zertifikatsteil von Edmonds-Karp und Dinic, hier zum Modell erhoben; Dinic, Edmonds-Karp und Ford-Fulkerson (Kopien aus den Vorgängern) füllen das Hilfsnetz. Die Grenze des Modells – **eine** Anlage genügt statt aller – führt zur Standortplanung (Erweiterung E3, geplant); endliche statt unendlicher Strafen für unterschiedlich entschiedene Nachbarn führen zum nächsten Stück, **Graph Cuts** (binäre Beschriftung mit Glattheitsstrafe, Boykov-Kolmogorov; geplant). Bisher gebaut: die zwölf Stücke der Hauptlinie und dieses Stück.
+**Einordnung in die Reihe (die Kanten des Graphen):** Der Schnitt ist der Zertifikatsteil von Edmonds-Karp und Dinic, hier zum Modell erhoben; Dinic, Edmonds-Karp und Ford-Fulkerson (Kopien aus den Vorgängern) füllen das Hilfsnetz. Die Grenze des Modells – **eine** Anlage genügt statt aller – führt zur Standortplanung (Erweiterung E3, geplant); endliche statt unendlicher Strafen für unterschiedlich entschiedene Nachbarn führen zum nächsten Stück, **Graph Cuts** (binäre Beschriftung mit Glattheitsstrafe, Boykov-Kolmogorov; gebaut: [graph-cuts-demo](https://github.com/sebastian-hanisch/graph-cuts-demo)). Bisher gebaut: die zwölf Stücke der Hauptlinie und die beiden ersten der Erweiterung E1.
 ```
 edmonds-karp-demo (Wurzel: Restgraph, Rückkanten, Max-Flow = Min-Cut)                  [gebaut]
   ├─ dinic-demo (viele kürzeste Wege je Phase: Niveaugraph, blockierender Fluss)        [gebaut]
@@ -25,7 +25,7 @@ edmonds-karp-demo (Wurzel: Restgraph, Rückkanten, Max-Flow = Min-Cut)          
 
 Erweiterung E1: der Schnitt als Modell (Kind von edmonds-karp-demo und dinic-demo)
   └─ projektauswahl-demo (Auswahl mit Voraussetzungen = Schnitt)                        [dieses Stück]
-       └─ graph-cuts-demo (endliche Nachbarstrafen, Boykov-Kolmogorov)                  [geplant]
+       └─ graph-cuts-demo (endliche Nachbarstrafen, Boykov-Kolmogorov)                  [gebaut]
 ```
 
 ## Ergebnis (Zahlen aus den Tests)
@@ -78,7 +78,7 @@ Vor dem Bau standen fünf Vermutungen im Plan. Gemessen:
 - **Alle Voraussetzungen sind Pflicht.** Genügt eine von mehreren Anlagen, ist das Problem NP-schwer (Standortplanung); der Schnitt bleibt zulässig, verlangt aber zu viel.
 - **Nur Auswahl, keine Mengen.** Eine Filiale ist ganz oder gar nicht beliefert; wie viel wohin fließt, klären Mehrgüterfluss und Netzdesign.
 - **Feste Kosten und Erlöse.** Sinkende Stückkosten oder Rabatte machen die Zielfunktion nichtlinear.
-- **Nur unendliche Strafen.** Eine Voraussetzung ist eine Kante mit unendlicher Kapazität; endliche Strafen für unterschiedlich entschiedene Nachbarn sind das nächste Stück (Graph Cuts).
+- **Nur unendliche Strafen.** Eine Voraussetzung ist eine Kante mit unendlicher Kapazität; endliche Strafen für unterschiedlich entschiedene Nachbarn sind das nächste Stück (Graph Cuts, gebaut: [graph-cuts-demo](https://github.com/sebastian-hanisch/graph-cuts-demo)).
 - **Synthetische Daten:** Erlöse 10 bis 50, Kosten der Verteilzentren 20 bis 50, der Werke 10 bis 30 (vor dem Kostenniveau); kein Kundenbezug.
 
 ## Bewusst nicht umgesetzt

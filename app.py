@@ -71,7 +71,7 @@ und ein **minimaler Schnitt** trennt die gewählte von der nicht gewählten Meng
 )
 st.caption(
     "Anders als die Fall-Demos im Portfolio, die an einem Anwendungsfall mehrere Verfahren vergleichen, zeigt diese Demo - erste Erweiterung der Netzwerkfluss-Linie der \"Konzepte\"-Reihe, Kind von Edmonds-Karp und Dinic - **ein** Verfahren an einem wachsenden Beispiel. "
-    "Bisher war der Schnitt nur der Beweis des maximalen Flusses; hier ist er das **Modell**. Danach kommt **Graph Cuts** (binäre Beschriftung mit Glattheitsstrafe, Boykov-Kolmogorov)."
+    "Bisher war der Schnitt nur der Beweis des maximalen Flusses; hier ist er das **Modell**. Danach kam **Graph Cuts** (gebaut: graph-cuts-demo; binäre Beschriftung mit Glattheitsstrafe, Boykov-Kolmogorov)."
 )
 
 with st.expander("So funktioniert die Auswahl per Schnitt", expanded=True):
@@ -330,11 +330,11 @@ st.markdown(
 | **Alle Voraussetzungen sind Pflicht** | Genügt eine von mehreren Anlagen, ist das ein „oder“: der Schnitt verlangt zu viel (im Mittel fehlt die Hälfte des Gewinns), das LP wird gebrochen, das Problem ist NP-schwer. Ansatzpunkt: **Standortplanung** (geplant: Facility Location, p-Median). |
 | **Nur die Auswahl zählt** | Es gibt keine Mengen: eine Filiale ist ganz oder gar nicht beliefert. Wie viel wohin fließt, ist eine andere Frage. Ansatzpunkt: **Mehrgüterfluss** und **Fixkosten-Netzdesign** (gebaut). |
 | **Die Kosten sind fest** | Kosten und Erlöse ändern sich nicht mit der Auswahl. Sinkende Stückkosten oder Rabatte machen die Zielfunktion nicht mehr linear. Die Preisreihe zeigt nur, wie die Auswahl auf feste Skalierungen reagiert. |
-| **Jede Kante ein Ja/Nein** | Die Strafe für zwei unterschiedlich entschiedene Nachbarn ist hier unendlich (Voraussetzung). Endliche Strafen für unterschiedliche Nachbarn sind der nächste Schritt: **Graph Cuts** (nächstes Stück, geplant), binäre Beschriftung mit Glattheitsstrafe. |
+| **Jede Kante ein Ja/Nein** | Die Strafe für zwei unterschiedlich entschiedene Nachbarn ist hier unendlich (Voraussetzung). Endliche Strafen für unterschiedliche Nachbarn sind der nächste Schritt: **Graph Cuts** (gebaut: graph-cuts-demo), binäre Beschriftung mit Glattheitsstrafe. |
 | **Ein Zeitpunkt** | Die Auswahl gilt für eine Periode. Ansatzpunkt: Fall-Demo „Distributionsnetzwerk-Optimierung“. |
 """
 )
-st.caption("Die Netzwerkfluss-Linie ist als Ganzes geplant: die zwölf Stücke der Hauptlinie (gebaut), dazu die Erweiterung E1 (Graph Cuts): **Projektauswahl** (dieses Stück) und **Graph Cuts** (nächstes Stück, geplant).")
+st.caption("Die Netzwerkfluss-Linie ist als Ganzes geplant: die zwölf Stücke der Hauptlinie (gebaut), dazu die Erweiterung E1 (Graph Cuts): **Projektauswahl** (dieses Stück) und **Graph Cuts** (gebaut: graph-cuts-demo).")
 
 st.markdown("---")
 
