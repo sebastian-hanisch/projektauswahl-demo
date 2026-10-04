@@ -327,7 +327,7 @@ st.markdown(
     """
 | Annahme | Was passiert, wenn sie verletzt ist - und wer ansetzt |
 |---|---|
-| **Alle Voraussetzungen sind Pflicht** | Genügt eine von mehreren Anlagen, ist das ein „oder“: der Schnitt verlangt zu viel (im Mittel fehlt die Hälfte des Gewinns), das LP wird gebrochen, das Problem ist NP-schwer. Ansatzpunkt: **Standortplanung** (geplant: Facility Location, p-Median). |
+| **Alle Voraussetzungen sind Pflicht** | Genügt eine von mehreren Anlagen, ist das ein „oder“: der Schnitt verlangt zu viel (im Mittel fehlt die Hälfte des Gewinns), das LP wird gebrochen, das Problem ist NP-schwer. Ansatzpunkt: **Standortplanung** (gebaut: standortplanung-demo, Facility Location). |
 | **Nur die Auswahl zählt** | Es gibt keine Mengen: eine Filiale ist ganz oder gar nicht beliefert. Wie viel wohin fließt, ist eine andere Frage. Ansatzpunkt: **Mehrgüterfluss** und **Fixkosten-Netzdesign** (gebaut). |
 | **Die Kosten sind fest** | Kosten und Erlöse ändern sich nicht mit der Auswahl. Sinkende Stückkosten oder Rabatte machen die Zielfunktion nicht mehr linear. Die Preisreihe zeigt nur, wie die Auswahl auf feste Skalierungen reagiert. |
 | **Jede Kante ein Ja/Nein** | Die Strafe für zwei unterschiedlich entschiedene Nachbarn ist hier unendlich (Voraussetzung). Endliche Strafen für unterschiedliche Nachbarn sind der nächste Schritt: **Graph Cuts** (gebaut: graph-cuts-demo), binäre Beschriftung mit Glattheitsstrafe. |
@@ -364,6 +364,6 @@ st.markdown("---")
 
 st.caption(
     "Diese Demo ist Teil des Portfolios von [Sebastian Hanisch](https://sebastianhanisch.net) – "
-    "Operations Research und Machine Learning. Interesse an einer maßgeschneiderten Lösung für "
-    "Ihr Unternehmen? [Kontakt aufnehmen](https://sebastianhanisch.net/kontakt.html)"
+    "Operations Research und Machine Learning ([Über mich](https://sebastianhanisch.net/ueber-mich.html)). "
+    "Mehr zur Reihe: [Netzwerkfluss: vom Max-Flow zum Netzdesign](https://sebastianhanisch.net/konzepte-netzwerkfluss.html)."
 )
