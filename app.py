@@ -334,7 +334,7 @@ st.markdown(
 | **Ein Zeitpunkt** | Die Auswahl gilt für eine Periode. Ansatzpunkt: Fall-Demo „Distributionsnetzwerk-Optimierung“. |
 """
 )
-st.caption("Die Netzwerkfluss-Linie ist als Ganzes geplant: die zwölf Stücke der Hauptlinie (gebaut), dazu die Erweiterung E1 (Graph Cuts): **Projektauswahl** (dieses Stück) und **Graph Cuts** (gebaut: graph-cuts-demo).")
+st.caption("Die Netzwerkfluss-Linie ist als Ganzes geplant: die dreizehn Stücke der Hauptlinie (gebaut), dazu die Erweiterung E1 (Graph Cuts): **Projektauswahl** (dieses Stück) und **Graph Cuts** (gebaut: graph-cuts-demo).")
 
 st.markdown("---")
 
