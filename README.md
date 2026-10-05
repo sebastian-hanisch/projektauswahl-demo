@@ -26,6 +26,7 @@ edmonds-karp-demo (Wurzel: Restgraph, Rückkanten, Max-Flow = Min-Cut)          
 Erweiterung E1: der Schnitt als Modell (Kind von edmonds-karp-demo und dinic-demo)
   └─ projektauswahl-demo (Auswahl mit Voraussetzungen = Schnitt)                        [dieses Stück]
        └─ graph-cuts-demo (endliche Nachbarstrafen, Boykov-Kolmogorov)                  [gebaut]
+            └─ gomory-hu-demo (alle Schnitte in einem Baum, Gusfield)                   [gebaut]
 ```
 
 ## Ergebnis (Zahlen aus den Tests)
